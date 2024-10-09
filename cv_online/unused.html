@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irfan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Jersey 10", sans-serif;
+            color: #a0a08b;
+        }
+
+        .border-custom-thin{
+            position: relative;
+            border : 4px solid #555568;
+        }
+        .border-custom-thin:before{
+            content: " ";
+            position: absolute;
+            /* z-index: -1; */
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            border : 6px solid #a0a08b;
+            border-top-width: 0px;
+            border-bottom-width: 0px;
+        }
+
+        .border-custom-bold{
+            position: relative;
+            border : 4px solid #a0a08b;
+            border-top-color: #e9efec;
+            border-top-width: 8px;
+            padding: 10px;
+        }
+
+        .border-custom-bold:before{
+            content: " ";
+            position: absolute;
+            /* z-index: -1; */
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            border : 6px solid #555568;
+            border-top-width: 0px;
+        }
+    </style>
+</head>
+<body style="background-color: #211e20;">
+    <div class="mx-5 border-custom-thin" >
+        <div class="row m-1 py-2">
+            <div class="col-4">
+                <div class="border-custom-bold">
+                    <img class="img-fluid" src="profile.jpeg" alt="">
+                </div>
+                <h2 class="">
+                    Test
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
